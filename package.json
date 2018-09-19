@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/varenas9/learning#readme",
   "dependencies": {
-    "chalk": "^2.4.1"
+    "chalk": "^2.4.1",
+    "eslint": "^5.6.0"
   }
 }
