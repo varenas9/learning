@@ -1,0 +1,23 @@
+{
+  "name": "learning",
+  "version": "0.0.1",
+  "description": "first package",
+  "main": "Intro.js",
+  "scripts": {
+    "start": "node Intro.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varenas9/learning.git"
+  },
+  "author": "Vanessa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varenas9/learning/issues"
+  },
+  "homepage": "https://github.com/varenas9/learning#readme",
+  "dependencies": {
+    "chalk": "^2.4.1"
+  }
+}
