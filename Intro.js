@@ -17,3 +17,10 @@ switch (sport){
     console.log('Go play some sport!');
     break;
 }
+function dayofWeek(day){
+  if (day === 'Monday') {
+    return console.log(chalk.underline.bgBlue.red('Go to Taekwondo!'));
+  }
+  return console.log(chalk.bgBlue.yellow('Go do Yoga!'));
+}
+dayofWeek('Monday');
