@@ -4,3 +4,5 @@ const names = require('./config/personas');
 const juice = color(names[0], 'blue');
 console.log(color(names[0],'blue'));
 console.log(color(names[1],'green'));
+
+
