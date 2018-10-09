@@ -2,10 +2,12 @@
   "name": "learning",
   "version": "0.0.1",
   "description": "first package",
-  "main": "Intro.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node Intro.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "measurements": "node measurements.js",
+    "test": "node_modules/lab/bin/lab -C -l -L -r html -o ./coverage/index.html -r console -o stdout",
+    "debug": "node --inspect=0.0.0.0:9229 index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,9 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "eslint": "^5.6.0"
+  },
+  "devDependencies": {
+    "code": "^5.2.0",
+    "lab": "^16.1.0"
   }
 }
