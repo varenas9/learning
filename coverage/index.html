@@ -541,6 +541,10 @@
         </li>
         <li class="">
             <span class="cov high">100</span>
+            <a href="#lib/cuentas.js"><span class="dirname">lib/</span><span class="basename">cuentas.js</span></a>
+        </li>
+        <li class="">
+            <span class="cov high">100</span>
             <a href="#lib/cupsToMl.js"><span class="dirname">lib/</span><span class="basename">cupsToMl.js</span></a>
         </li>
         <li class="">
@@ -566,8 +570,8 @@
       <div class="stats high">
           <div class="failures">0</div>
           <div class="skipped">0</div>
-          <div class="test-count">21</div>
-          <div class="duration">22</div>
+          <div class="test-count">23</div>
+          <div class="duration">25</div>
       </div>
       <div id="filters">
           <input type="checkbox" checked="" onchange="filter(this)" value="success" id="show-success">
@@ -583,8 +587,12 @@
           <label for="show-cups_and_ml">cups and ml</label>
           <input type="checkbox" checked="" onchange="filter(this)" value="farenheit_and_celsius" id="show-farenheit_and_celsius">
           <label for="show-farenheit_and_celsius">farenheit and celsius</label>
-          <input type="checkbox" checked="" onchange="filter(this)" value="when_there_is_no_conversion_available_for_the_given_input,_return_null" id="show-when_there_is_no_conversion_available_for_the_given_input,_return_null">
-          <label for="show-when_there_is_no_conversion_available_for_the_given_input,_return_null">when there is no conversion available for the given input, return null</label>
+          <input type="checkbox" checked="" onchange="filter(this)" value="when_there_is_no_conversion_available_for_the_given_input" id="show-when_there_is_no_conversion_available_for_the_given_input">
+          <label for="show-when_there_is_no_conversion_available_for_the_given_input">when there is no conversion available for the given input</label>
+          <input type="checkbox" checked="" onchange="filter(this)" value="cuentas" id="show-cuentas">
+          <label for="show-cuentas">cuentas</label>
+          <input type="checkbox" checked="" onchange="filter(this)" value="caulcular_total" id="show-caulcular_total">
+          <label for="show-caulcular_total">caulcular total</label>
           <input type="checkbox" checked="" onchange="filter(this)" value="cupsToMl" id="show-cupsToMl">
           <label for="show-cupsToMl">cupsToMl</label>
           <input type="checkbox" checked="" onchange="filter(this)" value="mlToCups" id="show-mlToCups">
@@ -644,7 +652,7 @@
               <td class="test-title">convert cups and ml should convert cups to ml
                   
               </td>
-              <td class="test-duration">2</td>
+              <td class="test-duration">0</td>
           </tr>
           <tr class="show convert cups_and_ml success">
               <td class="test-id">6</td>
@@ -665,7 +673,7 @@
               <td class="test-title">convert farenheit and celsius should convert celsius to farenheit
                   
               </td>
-              <td class="test-duration">1</td>
+              <td class="test-duration">0</td>
           </tr>
           <tr class="show convert farenheit_and_celsius success">
               <td class="test-id">9</td>
@@ -674,85 +682,99 @@
               </td>
               <td class="test-duration">0</td>
           </tr>
-          <tr class="show convert when_there_is_no_conversion_available_for_the_given_input,_return_null success">
+          <tr class="show convert when_there_is_no_conversion_available_for_the_given_input success">
               <td class="test-id">10</td>
-              <td class="test-title">convert when there is no conversion available for the given input, return null should reuturn null
+              <td class="test-title">convert when there is no conversion available for the given input should return null
+                  
+              </td>
+              <td class="test-duration">0</td>
+          </tr>
+          <tr class="show cuentas caulcular_total success">
+              <td class="test-id">11</td>
+              <td class="test-title">cuentas caulcular total should calculate total when there is no tip on itbms
+                  
+              </td>
+              <td class="test-duration">1</td>
+          </tr>
+          <tr class="show cuentas caulcular_total success">
+              <td class="test-id">12</td>
+              <td class="test-title">cuentas caulcular total should calculate the total when tip is on itbms
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show cupsToMl success">
-              <td class="test-id">11</td>
+              <td class="test-id">13</td>
               <td class="test-title">cupsToMl should convert cups to Milliliters
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show cupsToMl success">
-              <td class="test-id">12</td>
+              <td class="test-id">14</td>
               <td class="test-title">cupsToMl should convert 3 cups to 750 milliliters
-                  
-              </td>
-              <td class="test-duration">1</td>
-          </tr>
-          <tr class="show mlToCups success">
-              <td class="test-id">13</td>
-              <td class="test-title">mlToCups should convert milliliters to cups
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
+          <tr class="show mlToCups success">
+              <td class="test-id">15</td>
+              <td class="test-title">mlToCups should convert milliliters to cups
+                  
+              </td>
+              <td class="test-duration">1</td>
+          </tr>
           <tr class="show farenheitToCelsius success">
-              <td class="test-id">14</td>
+              <td class="test-id">16</td>
               <td class="test-title">farenheitToCelsius should convert degrees farenheit to degrees celsius
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show farenheitToCelsius success">
-              <td class="test-id">15</td>
+              <td class="test-id">17</td>
               <td class="test-title">farenheitToCelsius should convert 375 degrees farenheit to 190.556 degrees Celsius
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show celsiusToFarenheit success">
-              <td class="test-id">16</td>
+              <td class="test-id">18</td>
               <td class="test-title">celsiusToFarenheit should convert degrees celsius to degrees farenheit
                   
               </td>
-              <td class="test-duration">1</td>
+              <td class="test-duration">0</td>
           </tr>
           <tr class="show itbms success">
-              <td class="test-id">17</td>
+              <td class="test-id">19</td>
               <td class="test-title">itbms should return itbms tax
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show propina success">
-              <td class="test-id">18</td>
+              <td class="test-id">20</td>
               <td class="test-title">propina should return total multiplied by tip percentage
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show teaspoonToOunces success">
-              <td class="test-id">19</td>
+              <td class="test-id">21</td>
               <td class="test-title">teaspoonToOunces should convert teaspoons to ounces
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show teaspoonToOunces success">
-              <td class="test-id">20</td>
+              <td class="test-id">22</td>
               <td class="test-title">teaspoonToOunces should convert .5 teaspoon to 0.08 ounces
                   
               </td>
-              <td class="test-duration">1</td>
+              <td class="test-duration">0</td>
           </tr>
           <tr class="show ouncesToTeaspoons success">
-              <td class="test-id">21</td>
+              <td class="test-id">23</td>
               <td class="test-title">ouncesToTeaspoons should convert ounces to teaspoons
                   
               </td>
@@ -765,8 +787,8 @@
         <h1>Code Coverage Report</h1>
         <div class="stats high">
             <div class="percentage">100%</div>
-            <div class="sloc">67</div>
-            <div class="hits">67</div>
+            <div class="sloc">88</div>
+            <div class="hits">88</div>
             <div class="misses">0</div>
         </div>
         <div id="filters">
@@ -978,6 +1000,160 @@
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip>1</td>
                           <td class="source">module.exports &#x3D; convert;</td>
+                          
+                        </tr>        </tbody>
+                </table>
+            </div>
+            <div class="file ">
+                <h2 id="lib/cuentas.js">lib/cuentas.js </h2>
+                <div class="stats high">
+                    <div class="percentage">100%</div>
+                    <div class="sloc">21</div>
+                    <div class="hits">21</div>
+                    <div class="misses">0</div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Line</th>
+                            <th>Lint</th>
+                            <th>Hits</th>
+                            <th>Source</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="lib/cuentas.js__1" class="hit">
+                          <td class="line" data-tooltip>1</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">&#x27;use strict&#x27;;</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__2" class="hit">
+                          <td class="line" data-tooltip>2</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">function cuentas(total, propina, itbms){</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__3" class="hit">
+                          <td class="line" data-tooltip>3</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  function calcularItbms(total){</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__4" class="hit">
+                          <td class="line" data-tooltip>4</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>3</td>
+                          <td class="source">    return (total * 0.07);</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__5" class="hit">
+                          <td class="line" data-tooltip>5</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  }</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__6" class="hit">
+                          <td class="line" data-tooltip>6</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  function calcularPropina(total, propina, sobreItbms){</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__7" class="hit">
+                          <td class="line" data-tooltip>7</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">    if (sobreItbms &#x3D;&#x3D;&#x3D; true){</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__8" class="hit">
+                          <td class="line" data-tooltip>8</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">      const itbms &#x3D; calcularItbms(total);</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__9" class="hit">
+                          <td class="line" data-tooltip>9</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">      return (total + itbms) * propina;</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__10" class="hit">
+                          <td class="line" data-tooltip>10</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    }</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__11" class="hit">
+                          <td class="line" data-tooltip>11</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">    return total * propina;</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__12" class="hit">
+                          <td class="line" data-tooltip>12</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  }</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__13" class="hit">
+                          <td class="line" data-tooltip>13</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  function totalDebt(total, propina, itbms){</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__14" class="hit">
+                          <td class="line" data-tooltip>14</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">    return total + propina + itbms;</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__15" class="hit">
+                          <td class="line" data-tooltip>15</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  }</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__16" class="hit">
+                          <td class="line" data-tooltip>16</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"></td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__17" class="hit">
+                          <td class="line" data-tooltip>17</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">  const totalItbms &#x3D; calcularItbms(total);</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__18" class="hit">
+                          <td class="line" data-tooltip>18</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">  const totalPropina &#x3D; calcularPropina(total, propina, itbms);</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__19" class="hit">
+                          <td class="line" data-tooltip>19</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">  const totalDetails &#x3D; totalDebt(total, totalPropina, totalItbms);</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__20" class="hit">
+                          <td class="line" data-tooltip>20</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">  return Math.round(totalDetails * 100) / 100;</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__21" class="hit">
+                          <td class="line" data-tooltip>21</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">};</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__22" class="hit">
+                          <td class="line" data-tooltip>22</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">module.exports &#x3D; cuentas;</td>
                           
                         </tr>        </tbody>
                 </table>
