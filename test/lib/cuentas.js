@@ -7,7 +7,7 @@ const cuentas = require('../../lib/cuentas');
 describe('cuentas', () => {
   describe('caulcular total', () => {
     it('should calculate total when there is no tip on itbms', () => {
-      const results = cuentas(5, .10, 0);
+      const results = cuentas(5, .10, false);
       expect(results).to.equal(5.85);
     });
     it('should calculate the total when tip is on itbms', () => {
