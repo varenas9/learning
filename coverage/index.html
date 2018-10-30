@@ -571,7 +571,7 @@
           <div class="failures">0</div>
           <div class="skipped">0</div>
           <div class="test-count">23</div>
-          <div class="duration">20</div>
+          <div class="duration">24</div>
       </div>
       <div id="filters">
           <input type="checkbox" checked="" onchange="filter(this)" value="success" id="show-success">
@@ -624,14 +624,14 @@
               <td class="test-title">convert ounces and teaspoons should convert ounces to teaspoons
                   
               </td>
-              <td class="test-duration">4</td>
+              <td class="test-duration">6</td>
           </tr>
           <tr class="show convert ounces_and_teaspoons success">
               <td class="test-id">2</td>
               <td class="test-title">convert ounces and teaspoons should convert teaspoons to ounces
                   
               </td>
-              <td class="test-duration">1</td>
+              <td class="test-duration">2</td>
           </tr>
           <tr class="show convert ounces_and_teaspoons success">
               <td class="test-id">3</td>
@@ -708,7 +708,7 @@
               <td class="test-title">cupsToMl should convert cups to Milliliters
                   
               </td>
-              <td class="test-duration">0</td>
+              <td class="test-duration">1</td>
           </tr>
           <tr class="show cupsToMl success">
               <td class="test-id">14</td>
@@ -722,7 +722,7 @@
               <td class="test-title">mlToCups should convert milliliters to cups
                   
               </td>
-              <td class="test-duration">1</td>
+              <td class="test-duration">0</td>
           </tr>
           <tr class="show farenheitToCelsius success">
               <td class="test-id">16</td>
@@ -736,7 +736,7 @@
               <td class="test-title">farenheitToCelsius should convert 375 degrees farenheit to 190.556 degrees Celsius
                   
               </td>
-              <td class="test-duration">0</td>
+              <td class="test-duration">1</td>
           </tr>
           <tr class="show celsiusToFarenheit success">
               <td class="test-id">18</td>
@@ -750,7 +750,7 @@
               <td class="test-title">itbms should return itbms tax
                   
               </td>
-              <td class="test-duration">1</td>
+              <td class="test-duration">0</td>
           </tr>
           <tr class="show propina success">
               <td class="test-id">20</td>
@@ -764,7 +764,7 @@
               <td class="test-title">teaspoonToOunces should convert teaspoons to ounces
                   
               </td>
-              <td class="test-duration">0</td>
+              <td class="test-duration">1</td>
           </tr>
           <tr class="show teaspoonToOunces success">
               <td class="test-id">22</td>
@@ -778,7 +778,7 @@
               <td class="test-title">ouncesToTeaspoons should convert ounces to teaspoons
                   
               </td>
-              <td class="test-duration">1</td>
+              <td class="test-duration">0</td>
           </tr>
           </tbody>
       </table>
@@ -787,8 +787,8 @@
         <h1>Code Coverage Report</h1>
         <div class="stats high">
             <div class="percentage">100%</div>
-            <div class="sloc">88</div>
-            <div class="hits">88</div>
+            <div class="sloc">101</div>
+            <div class="hits">101</div>
             <div class="misses">0</div>
         </div>
         <div id="filters">
@@ -1008,8 +1008,8 @@
                 <h2 id="lib/cuentas.js">lib/cuentas.js </h2>
                 <div class="stats high">
                     <div class="percentage">100%</div>
-                    <div class="sloc">21</div>
-                    <div class="hits">21</div>
+                    <div class="sloc">34</div>
+                    <div class="hits">34</div>
                     <div class="misses">0</div>
                 </div>
                 <table>
@@ -1033,124 +1033,256 @@
                           <td class="line" data-tooltip>2</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">function cuentas(total, propina, sobreItbms){</td>
+                          <td class="source">function cuentas(total, propina, sobreItbms, callback){</td>
                           
                         </tr>            <tr id="lib/cuentas.js__3" class="hit">
                           <td class="line" data-tooltip>3</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">  function calcularItbms(){</td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">  const itbms &#x3D; 0.07;</td>
                           
                         </tr>            <tr id="lib/cuentas.js__4" class="hit">
                           <td class="line" data-tooltip>4</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>3</td>
-                          <td class="source">    return (total * 0.07);</td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"></td>
                           
                         </tr>            <tr id="lib/cuentas.js__5" class="hit">
                           <td class="line" data-tooltip>5</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">  }</td>
+                          <td class="source">  // Anonymous function</td>
                           
                         </tr>            <tr id="lib/cuentas.js__6" class="hit">
                           <td class="line" data-tooltip>6</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">  function calcularPropina(){</td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">  const calcularItbms &#x3D; function(cb) {</td>
                           
                         </tr>            <tr id="lib/cuentas.js__7" class="hit">
                           <td class="line" data-tooltip>7</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>2</td>
-                          <td class="source">    if (sobreItbms &#x3D;&#x3D;&#x3D; true){</td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    const results &#x3D; total * itbms;</td>
                           
                         </tr>            <tr id="lib/cuentas.js__8" class="hit">
                           <td class="line" data-tooltip>8</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">      const itbms &#x3D; calcularItbms();</td>
+                          <td class="hits" data-tooltip>3</td>
+                          <td class="source">    return cb(results);</td>
                           
                         </tr>            <tr id="lib/cuentas.js__9" class="hit">
                           <td class="line" data-tooltip>9</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">      return (total + itbms) * propina;</td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  };</td>
                           
                         </tr>            <tr id="lib/cuentas.js__10" class="hit">
                           <td class="line" data-tooltip>10</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">    }</td>
+                          <td class="source"></td>
                           
                         </tr>            <tr id="lib/cuentas.js__11" class="hit">
                           <td class="line" data-tooltip>11</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">    return total * propina;</td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  // Named function</td>
                           
                         </tr>            <tr id="lib/cuentas.js__12" class="hit">
                           <td class="line" data-tooltip>12</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">  }</td>
+                          <td class="source">  function calcularPropina(callback) {</td>
                           
                         </tr>            <tr id="lib/cuentas.js__13" class="hit">
                           <td class="line" data-tooltip>13</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">  function totalDebt(propina, itbms){</td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">    if (sobreItbms &#x3D;&#x3D;&#x3D; true){</td>
                           
                         </tr>            <tr id="lib/cuentas.js__14" class="hit">
                           <td class="line" data-tooltip>14</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>2</td>
-                          <td class="source">    return total + propina + itbms;</td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">      return calcularItbms((itbms) &#x3D;&gt; {</td>
                           
                         </tr>            <tr id="lib/cuentas.js__15" class="hit">
                           <td class="line" data-tooltip>15</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">  }</td>
+                          <td class="source">        const results &#x3D; (total + itbms) * propina;</td>
                           
                         </tr>            <tr id="lib/cuentas.js__16" class="hit">
                           <td class="line" data-tooltip>16</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">        return callback(results);</td>
                           
                         </tr>            <tr id="lib/cuentas.js__17" class="hit">
                           <td class="line" data-tooltip>17</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>2</td>
-                          <td class="source">  const totalItbms &#x3D; calcularItbms();</td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">      });</td>
                           
                         </tr>            <tr id="lib/cuentas.js__18" class="hit">
                           <td class="line" data-tooltip>18</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>2</td>
-                          <td class="source">  const totalPropina &#x3D; calcularPropina();</td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    }</td>
                           
                         </tr>            <tr id="lib/cuentas.js__19" class="hit">
                           <td class="line" data-tooltip>19</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>2</td>
-                          <td class="source">  const totalDetails &#x3D; totalDebt(totalPropina, totalItbms);</td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">    const results &#x3D; total * propina;</td>
                           
                         </tr>            <tr id="lib/cuentas.js__20" class="hit">
                           <td class="line" data-tooltip>20</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>2</td>
-                          <td class="source">  return Math.round(totalDetails * 100) / 100;</td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">    return callback(results);</td>
                           
                         </tr>            <tr id="lib/cuentas.js__21" class="hit">
                           <td class="line" data-tooltip>21</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">};</td>
+                          <td class="source">  };</td>
                           
                         </tr>            <tr id="lib/cuentas.js__22" class="hit">
                           <td class="line" data-tooltip>22</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  // Arrow function</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__23" class="hit">
+                          <td class="line" data-tooltip>23</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">  const totalDebt &#x3D; (propina, itbms, callback) &#x3D;&gt; {</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__24" class="hit">
+                          <td class="line" data-tooltip>24</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    const results &#x3D; total + propina + itbms;</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__25" class="hit">
+                          <td class="line" data-tooltip>25</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">    return callback(results);</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__26" class="hit">
+                          <td class="line" data-tooltip>26</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  };</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__27" class="hit">
+                          <td class="line" data-tooltip>27</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"></td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__28" class="hit">
+                          <td class="line" data-tooltip>28</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">  calcularItbms((results) &#x3D;&gt; {</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__29" class="hit">
+                          <td class="line" data-tooltip>29</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    const totalItbms &#x3D; results;</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__30" class="hit">
+                          <td class="line" data-tooltip>30</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"></td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__31" class="hit">
+                          <td class="line" data-tooltip>31</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">    calcularPropina((results) &#x3D;&gt; {</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__32" class="hit">
+                          <td class="line" data-tooltip>32</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">      const totalPropina &#x3D; results;</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__33" class="hit">
+                          <td class="line" data-tooltip>33</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"></td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__34" class="hit">
+                          <td class="line" data-tooltip>34</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">      totalDebt(totalPropina, totalItbms, (results) &#x3D;&gt; {</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__35" class="hit">
+                          <td class="line" data-tooltip>35</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        const totalDetails &#x3D; results;</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__36" class="hit">
+                          <td class="line" data-tooltip>36</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">        const totalResults &#x3D;  Math.round(totalDetails * 100) / 100;</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__37" class="hit">
+                          <td class="line" data-tooltip>37</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>2</td>
+                          <td class="source">        return callback(totalResults);</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__38" class="hit">
+                          <td class="line" data-tooltip>38</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">      });</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__39" class="hit">
+                          <td class="line" data-tooltip>39</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    });</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__40" class="hit">
+                          <td class="line" data-tooltip>40</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"></td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__41" class="hit">
+                          <td class="line" data-tooltip>41</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  });</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__42" class="hit">
+                          <td class="line" data-tooltip>42</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"></td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__43" class="hit">
+                          <td class="line" data-tooltip>43</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">};</td>
+                          
+                        </tr>            <tr id="lib/cuentas.js__44" class="hit">
+                          <td class="line" data-tooltip>44</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip>1</td>
                           <td class="source">module.exports &#x3D; cuentas;</td>
