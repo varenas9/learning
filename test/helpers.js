@@ -6,3 +6,4 @@ const lab = exports.lab = Lab.script();
 global.describe = lab.describe;
 global.it = lab.it;
 global.expect = code.expect;
+global.beforeEach = lab.beforeEach;
