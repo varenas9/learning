@@ -537,6 +537,10 @@
         <li><a href="#coverage">Coverage Report</a></li>
         <li class="">
             <span class="cov high">100</span>
+            <a href="#lib/car.js"><span class="dirname">lib/</span><span class="basename">car.js</span></a>
+        </li>
+        <li class="">
+            <span class="cov high">100</span>
             <a href="#lib/convert.js"><span class="dirname">lib/</span><span class="basename">convert.js</span></a>
         </li>
         <li class="">
@@ -549,7 +553,15 @@
         </li>
         <li class="">
             <span class="cov high">100</span>
+            <a href="#lib/dog.js"><span class="dirname">lib/</span><span class="basename">dog.js</span></a>
+        </li>
+        <li class="">
+            <span class="cov high">100</span>
             <a href="#lib/farenheitToCelsius.js"><span class="dirname">lib/</span><span class="basename">farenheitToCelsius.js</span></a>
+        </li>
+        <li class="">
+            <span class="cov high">100</span>
+            <a href="#lib/human.js"><span class="dirname">lib/</span><span class="basename">human.js</span></a>
         </li>
         <li class="">
             <span class="cov high">100</span>
@@ -564,14 +576,22 @@
             <a href="#lib/teaspoontoounces.js"><span class="dirname">lib/</span><span class="basename">teaspoontoounces.js</span></a>
         </li>
         <li><a href="#linting">Linting Report</a></li>
+        <li>
+            <span class="lint"><span class="high">0</span> || <span class="low">2</span></span>
+            <a href="#lint-index.js">index.js</a>
+        </li>
+        <li>
+            <span class="lint"><span class="high">0</span> || <span class="low">1</span></span>
+            <a href="#lint-test/lib/chevrolet.js">test/lib/chevrolet.js</a>
+        </li>
     </div>
     <div id="tests">
       <h1>Test Report</h1>
       <div class="stats high">
           <div class="failures">0</div>
           <div class="skipped">0</div>
-          <div class="test-count">23</div>
-          <div class="duration">24</div>
+          <div class="test-count">29</div>
+          <div class="duration">25</div>
       </div>
       <div id="filters">
           <input type="checkbox" checked="" onchange="filter(this)" value="success" id="show-success">
@@ -579,6 +599,16 @@
           <input type="checkbox" checked="" onchange="filter(this)" value="failure" id="show-failure">
           <label for="show-failure">Show Failure</label>
           <br>
+          <input type="checkbox" checked="" onchange="filter(this)" value="Car" id="show-Car">
+          <label for="show-Car">Car</label>
+          <input type="checkbox" checked="" onchange="filter(this)" value="startCar" id="show-startCar">
+          <label for="show-startCar">startCar</label>
+          <input type="checkbox" checked="" onchange="filter(this)" value="turnOffCar" id="show-turnOffCar">
+          <label for="show-turnOffCar">turnOffCar</label>
+          <input type="checkbox" checked="" onchange="filter(this)" value="boardCar" id="show-boardCar">
+          <label for="show-boardCar">boardCar</label>
+          <input type="checkbox" checked="" onchange="filter(this)" value="car_is_Red_and_White" id="show-car_is_Red_and_White">
+          <label for="show-car_is_Red_and_White">car is Red and White</label>
           <input type="checkbox" checked="" onchange="filter(this)" value="convert" id="show-convert">
           <label for="show-convert">convert</label>
           <input type="checkbox" checked="" onchange="filter(this)" value="ounces_and_teaspoons" id="show-ounces_and_teaspoons">
@@ -619,166 +649,208 @@
           </tr>
           </thead>
           <tbody>
-          <tr class="show convert ounces_and_teaspoons success">
+          <tr class="show Car startCar success">
               <td class="test-id">1</td>
+              <td class="test-title">Car startCar should turn car to started
+                  
+              </td>
+              <td class="test-duration">3</td>
+          </tr>
+          <tr class="show Car turnOffCar success">
+              <td class="test-id">2</td>
+              <td class="test-title">Car turnOffCar should turn car from started to off
+                  
+              </td>
+              <td class="test-duration">0</td>
+          </tr>
+          <tr class="show Car boardCar success">
+              <td class="test-id">3</td>
+              <td class="test-title">Car boardCar should board instance of Human to number of seats
+                  
+              </td>
+              <td class="test-duration">1</td>
+          </tr>
+          <tr class="show Car boardCar success">
+              <td class="test-id">4</td>
+              <td class="test-title">Car boardCar should board Human only until 2 seats
+                  
+              </td>
+              <td class="test-duration">0</td>
+          </tr>
+          <tr class="show Car boardCar success">
+              <td class="test-id">5</td>
+              <td class="test-title">Car boardCar should not allow dog to board the car
+                  
+              </td>
+              <td class="test-duration">1</td>
+          </tr>
+          <tr class="show Car car_is_Red_and_White success">
+              <td class="test-id">6</td>
+              <td class="test-title">Car car is Red and White should have only 3 wheels
+                  
+              </td>
+              <td class="test-duration">0</td>
+          </tr>
+          <tr class="show convert ounces_and_teaspoons success">
+              <td class="test-id">7</td>
               <td class="test-title">convert ounces and teaspoons should convert ounces to teaspoons
                   
               </td>
-              <td class="test-duration">6</td>
+              <td class="test-duration">1</td>
           </tr>
           <tr class="show convert ounces_and_teaspoons success">
-              <td class="test-id">2</td>
+              <td class="test-id">8</td>
               <td class="test-title">convert ounces and teaspoons should convert teaspoons to ounces
                   
               </td>
-              <td class="test-duration">2</td>
+              <td class="test-duration">0</td>
           </tr>
           <tr class="show convert ounces_and_teaspoons success">
-              <td class="test-id">3</td>
+              <td class="test-id">9</td>
               <td class="test-title">convert ounces and teaspoons should convert regardless of mix casing
-                  
-              </td>
-              <td class="test-duration">0</td>
-          </tr>
-          <tr class="show convert cups_and_ml success">
-              <td class="test-id">4</td>
-              <td class="test-title">convert cups and ml should convert cups to ml
-                  
-              </td>
-              <td class="test-duration">0</td>
-          </tr>
-          <tr class="show convert cups_and_ml success">
-              <td class="test-id">5</td>
-              <td class="test-title">convert cups and ml should convert cups to ml
                   
               </td>
               <td class="test-duration">1</td>
           </tr>
           <tr class="show convert cups_and_ml success">
-              <td class="test-id">6</td>
+              <td class="test-id">10</td>
+              <td class="test-title">convert cups and ml should convert cups to ml
+                  
+              </td>
+              <td class="test-duration">0</td>
+          </tr>
+          <tr class="show convert cups_and_ml success">
+              <td class="test-id">11</td>
+              <td class="test-title">convert cups and ml should convert cups to ml
+                  
+              </td>
+              <td class="test-duration">0</td>
+          </tr>
+          <tr class="show convert cups_and_ml success">
+              <td class="test-id">12</td>
               <td class="test-title">convert cups and ml should convert regardless of mix casing
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show convert farenheit_and_celsius success">
-              <td class="test-id">7</td>
+              <td class="test-id">13</td>
               <td class="test-title">convert farenheit and celsius should convert farenheit to celsius
-                  
-              </td>
-              <td class="test-duration">0</td>
-          </tr>
-          <tr class="show convert farenheit_and_celsius success">
-              <td class="test-id">8</td>
-              <td class="test-title">convert farenheit and celsius should convert celsius to farenheit
                   
               </td>
               <td class="test-duration">1</td>
           </tr>
           <tr class="show convert farenheit_and_celsius success">
-              <td class="test-id">9</td>
-              <td class="test-title">convert farenheit and celsius should convert regardless of mix casing
+              <td class="test-id">14</td>
+              <td class="test-title">convert farenheit and celsius should convert celsius to farenheit
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
+          <tr class="show convert farenheit_and_celsius success">
+              <td class="test-id">15</td>
+              <td class="test-title">convert farenheit and celsius should convert regardless of mix casing
+                  
+              </td>
+              <td class="test-duration">1</td>
+          </tr>
           <tr class="show convert when_there_is_no_conversion_available_for_the_given_input success">
-              <td class="test-id">10</td>
+              <td class="test-id">16</td>
               <td class="test-title">convert when there is no conversion available for the given input should return null
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show cuentas caulcular_total success">
-              <td class="test-id">11</td>
+              <td class="test-id">17</td>
               <td class="test-title">cuentas caulcular total should calculate total when there is no tip on itbms
+                  
+              </td>
+              <td class="test-duration">0</td>
+          </tr>
+          <tr class="show cuentas caulcular_total success">
+              <td class="test-id">18</td>
+              <td class="test-title">cuentas caulcular total should calculate the total when tip is on itbms
                   
               </td>
               <td class="test-duration">1</td>
           </tr>
-          <tr class="show cuentas caulcular_total success">
-              <td class="test-id">12</td>
-              <td class="test-title">cuentas caulcular total should calculate the total when tip is on itbms
+          <tr class="show cupsToMl success">
+              <td class="test-id">19</td>
+              <td class="test-title">cupsToMl should convert cups to Milliliters
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show cupsToMl success">
-              <td class="test-id">13</td>
-              <td class="test-title">cupsToMl should convert cups to Milliliters
-                  
-              </td>
-              <td class="test-duration">1</td>
-          </tr>
-          <tr class="show cupsToMl success">
-              <td class="test-id">14</td>
+              <td class="test-id">20</td>
               <td class="test-title">cupsToMl should convert 3 cups to 750 milliliters
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show mlToCups success">
-              <td class="test-id">15</td>
+              <td class="test-id">21</td>
               <td class="test-title">mlToCups should convert milliliters to cups
                   
               </td>
-              <td class="test-duration">0</td>
+              <td class="test-duration">1</td>
           </tr>
           <tr class="show farenheitToCelsius success">
-              <td class="test-id">16</td>
+              <td class="test-id">22</td>
               <td class="test-title">farenheitToCelsius should convert degrees farenheit to degrees celsius
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show farenheitToCelsius success">
-              <td class="test-id">17</td>
+              <td class="test-id">23</td>
               <td class="test-title">farenheitToCelsius should convert 375 degrees farenheit to 190.556 degrees Celsius
                   
               </td>
-              <td class="test-duration">1</td>
+              <td class="test-duration">0</td>
           </tr>
           <tr class="show celsiusToFarenheit success">
-              <td class="test-id">18</td>
+              <td class="test-id">24</td>
               <td class="test-title">celsiusToFarenheit should convert degrees celsius to degrees farenheit
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show itbms success">
-              <td class="test-id">19</td>
+              <td class="test-id">25</td>
               <td class="test-title">itbms should return itbms tax
                   
               </td>
-              <td class="test-duration">0</td>
+              <td class="test-duration">1</td>
           </tr>
           <tr class="show propina success">
-              <td class="test-id">20</td>
+              <td class="test-id">26</td>
               <td class="test-title">propina should return total multiplied by tip percentage
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show teaspoonToOunces success">
-              <td class="test-id">21</td>
+              <td class="test-id">27</td>
               <td class="test-title">teaspoonToOunces should convert teaspoons to ounces
                   
               </td>
-              <td class="test-duration">1</td>
+              <td class="test-duration">0</td>
           </tr>
           <tr class="show teaspoonToOunces success">
-              <td class="test-id">22</td>
+              <td class="test-id">28</td>
               <td class="test-title">teaspoonToOunces should convert .5 teaspoon to 0.08 ounces
                   
               </td>
               <td class="test-duration">0</td>
           </tr>
           <tr class="show ouncesToTeaspoons success">
-              <td class="test-id">23</td>
+              <td class="test-id">29</td>
               <td class="test-title">ouncesToTeaspoons should convert ounces to teaspoons
                   
               </td>
-              <td class="test-duration">0</td>
+              <td class="test-duration">1</td>
           </tr>
           </tbody>
       </table>
@@ -787,8 +859,8 @@
         <h1>Code Coverage Report</h1>
         <div class="stats high">
             <div class="percentage">100%</div>
-            <div class="sloc">101</div>
-            <div class="hits">101</div>
+            <div class="sloc">142</div>
+            <div class="hits">142</div>
             <div class="misses">0</div>
         </div>
         <div id="filters">
@@ -796,6 +868,178 @@
           <label for="show-generated">Show generated files</label>
         </div>
         <div id="files">
+            <div class="file ">
+                <h2 id="lib/car.js">lib/car.js </h2>
+                <div class="stats high">
+                    <div class="percentage">100%</div>
+                    <div class="sloc">23</div>
+                    <div class="hits">23</div>
+                    <div class="misses">0</div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Line</th>
+                            <th>Lint</th>
+                            <th>Hits</th>
+                            <th>Source</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="lib/car.js__1" class="hit">
+                          <td class="line" data-tooltip>1</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">&#x27;use strict&#x27;;</td>
+                          
+                        </tr>            <tr id="lib/car.js__2" class="hit">
+                          <td class="line" data-tooltip>2</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">const Human &#x3D; require(&#x27;./human&#x27;);</td>
+                          
+                        </tr>            <tr id="lib/car.js__3" class="hit">
+                          <td class="line" data-tooltip>3</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">function Car(color) {</td>
+                          
+                        </tr>            <tr id="lib/car.js__4" class="hit">
+                          <td class="line" data-tooltip>4</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>7</td>
+                          <td class="source">  this.windows &#x3D; 5;</td>
+                          
+                        </tr>            <tr id="lib/car.js__5" class="hit">
+                          <td class="line" data-tooltip>5</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>7</td>
+                          <td class="source">  this.wheels &#x3D; (color &#x3D;&#x3D;&#x3D; &#x27;Red and White&#x27;) ? 3 : 4;</td>
+                          
+                        </tr>            <tr id="lib/car.js__6" class="hit">
+                          <td class="line" data-tooltip>6</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>7</td>
+                          <td class="source">  this.seats &#x3D; 2;</td>
+                          
+                        </tr>            <tr id="lib/car.js__7" class="hit">
+                          <td class="line" data-tooltip>7</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>7</td>
+                          <td class="source">  this.shift &#x3D; &#x27;stick&#x27;;</td>
+                          
+                        </tr>            <tr id="lib/car.js__8" class="hit">
+                          <td class="line" data-tooltip>8</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>7</td>
+                          <td class="source">  this.color &#x3D; color;</td>
+                          
+                        </tr>            <tr id="lib/car.js__9" class="hit">
+                          <td class="line" data-tooltip>9</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>7</td>
+                          <td class="source">  this.started &#x3D; false;</td>
+                          
+                        </tr>            <tr id="lib/car.js__10" class="hit">
+                          <td class="line" data-tooltip>10</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>7</td>
+                          <td class="source">  this.spots &#x3D; [];</td>
+                          
+                        </tr>            <tr id="lib/car.js__11" class="hit">
+                          <td class="line" data-tooltip>11</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">};</td>
+                          
+                        </tr>            <tr id="lib/car.js__12" class="hit">
+                          <td class="line" data-tooltip>12</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"></td>
+                          
+                        </tr>            <tr id="lib/car.js__13" class="hit">
+                          <td class="line" data-tooltip>13</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">Car.prototype.startCar &#x3D; function(){</td>
+                          
+                        </tr>            <tr id="lib/car.js__14" class="hit">
+                          <td class="line" data-tooltip>14</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  this.started &#x3D; true;</td>
+                          
+                        </tr>            <tr id="lib/car.js__15" class="hit">
+                          <td class="line" data-tooltip>15</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">};</td>
+                          
+                        </tr>            <tr id="lib/car.js__16" class="hit">
+                          <td class="line" data-tooltip>16</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">Car.prototype.turnOffCar &#x3D; function(){</td>
+                          
+                        </tr>            <tr id="lib/car.js__17" class="hit">
+                          <td class="line" data-tooltip>17</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  this.started &#x3D; false;</td>
+                          
+                        </tr>            <tr id="lib/car.js__18" class="hit">
+                          <td class="line" data-tooltip>18</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">};</td>
+                          
+                        </tr>            <tr id="lib/car.js__19" class="hit">
+                          <td class="line" data-tooltip>19</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"></td>
+                          
+                        </tr>            <tr id="lib/car.js__20" class="hit">
+                          <td class="line" data-tooltip>20</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">Car.prototype.boardCar &#x3D; function(being){</td>
+                          
+                        </tr>            <tr id="lib/car.js__21" class="hit">
+                          <td class="line" data-tooltip>21</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  if (being instanceof Human &amp;&amp; this.seats &gt; this.spots.length) {</td>
+                          
+                        </tr>            <tr id="lib/car.js__22" class="hit">
+                          <td class="line" data-tooltip>22</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>3</td>
+                          <td class="source">    this.spots.push(being);</td>
+                          
+                        </tr>            <tr id="lib/car.js__23" class="hit">
+                          <td class="line" data-tooltip>23</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">  }</td>
+                          
+                        </tr>            <tr id="lib/car.js__24" class="hit">
+                          <td class="line" data-tooltip>24</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">};</td>
+                          
+                        </tr>            <tr id="lib/car.js__25" class="hit">
+                          <td class="line" data-tooltip>25</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">module.exports &#x3D; Car;</td>
+                          
+                        </tr>        </tbody>
+                </table>
+            </div>
             <div class="file ">
                 <h2 id="lib/convert.js">lib/convert.js </h2>
                 <div class="stats high">
@@ -1379,6 +1623,82 @@
                 </table>
             </div>
             <div class="file ">
+                <h2 id="lib/dog.js">lib/dog.js </h2>
+                <div class="stats high">
+                    <div class="percentage">100%</div>
+                    <div class="sloc">8</div>
+                    <div class="hits">8</div>
+                    <div class="misses">0</div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Line</th>
+                            <th>Lint</th>
+                            <th>Hits</th>
+                            <th>Source</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="lib/dog.js__1" class="hit">
+                          <td class="line" data-tooltip>1</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">&#x27;use strict&#x27;;</td>
+                          
+                        </tr>            <tr id="lib/dog.js__2" class="hit">
+                          <td class="line" data-tooltip>2</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">function Dog(name){</td>
+                          
+                        </tr>            <tr id="lib/dog.js__3" class="hit">
+                          <td class="line" data-tooltip>3</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">  this.color &#x3D; &#x27;white&#x27;;</td>
+                          
+                        </tr>            <tr id="lib/dog.js__4" class="hit">
+                          <td class="line" data-tooltip>4</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">  this.size &#x3D; &#x27;small&#x27;;</td>
+                          
+                        </tr>            <tr id="lib/dog.js__5" class="hit">
+                          <td class="line" data-tooltip>5</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">  this.breed &#x3D; &#x27;maltipoo&#x27;;</td>
+                          
+                        </tr>            <tr id="lib/dog.js__6" class="hit">
+                          <td class="line" data-tooltip>6</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">  this.name &#x3D; name;</td>
+                          
+                        </tr>            <tr id="lib/dog.js__7" class="hit">
+                          <td class="line" data-tooltip>7</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">};</td>
+                          
+                        </tr>            <tr id="lib/dog.js__8" class="hit">
+                          <td class="line" data-tooltip>8</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"></td>
+                          
+                        </tr>            <tr id="lib/dog.js__9" class="hit">
+                          <td class="line" data-tooltip>9</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">module.exports &#x3D; Dog;</td>
+                          
+                        </tr>        </tbody>
+                </table>
+            </div>
+            <div class="file ">
                 <h2 id="lib/farenheitToCelsius.js">lib/farenheitToCelsius.js </h2>
                 <div class="stats high">
                     <div class="percentage">100%</div>
@@ -1462,6 +1782,88 @@
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip>1</td>
                           <td class="source">exports.celsiusToFarenheit &#x3D; celsiusToFarenheit;</td>
+                          
+                        </tr>        </tbody>
+                </table>
+            </div>
+            <div class="file ">
+                <h2 id="lib/human.js">lib/human.js </h2>
+                <div class="stats high">
+                    <div class="percentage">100%</div>
+                    <div class="sloc">10</div>
+                    <div class="hits">10</div>
+                    <div class="misses">0</div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Line</th>
+                            <th>Lint</th>
+                            <th>Hits</th>
+                            <th>Source</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="lib/human.js__1" class="hit">
+                          <td class="line" data-tooltip>1</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">&#x27;use strict&#x27;;</td>
+                          
+                        </tr>            <tr id="lib/human.js__2" class="hit">
+                          <td class="line" data-tooltip>2</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">function Human(name){</td>
+                          
+                        </tr>            <tr id="lib/human.js__3" class="hit">
+                          <td class="line" data-tooltip>3</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>10</td>
+                          <td class="source">  this.eyes &#x3D; &#x27;blue&#x27;;</td>
+                          
+                        </tr>            <tr id="lib/human.js__4" class="hit">
+                          <td class="line" data-tooltip>4</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>10</td>
+                          <td class="source">  this.name &#x3D; name;</td>
+                          
+                        </tr>            <tr id="lib/human.js__5" class="hit">
+                          <td class="line" data-tooltip>5</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>10</td>
+                          <td class="source">  this.gender &#x3D; &#x27;female&#x27;;</td>
+                          
+                        </tr>            <tr id="lib/human.js__6" class="hit">
+                          <td class="line" data-tooltip>6</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>10</td>
+                          <td class="source">  this.hair &#x3D; &#x27;brown&#x27;;</td>
+                          
+                        </tr>            <tr id="lib/human.js__7" class="hit">
+                          <td class="line" data-tooltip>7</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>10</td>
+                          <td class="source">  this.body &#x3D; &#x27;fat&#x27;;</td>
+                          
+                        </tr>            <tr id="lib/human.js__8" class="hit">
+                          <td class="line" data-tooltip>8</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>10</td>
+                          <td class="source">  this.height &#x3D; 5.2;</td>
+                          
+                        </tr>            <tr id="lib/human.js__9" class="hit">
+                          <td class="line" data-tooltip>9</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">}</td>
+                          
+                        </tr>            <tr id="lib/human.js__10" class="hit">
+                          <td class="line" data-tooltip>10</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">module.exports &#x3D; Human;</td>
                           
                         </tr>        </tbody>
                 </table>
@@ -1675,9 +2077,43 @@
         <h1>Linting Report</h1>
             <div class="lint-stats">
                 <span class="lint-errors high">0</span>
-                <span class="lint-warnings high">0</span>
+                <span class="lint-warnings low">3</span>
             </div>
             <div class="lint-files">
-            </div>
+                <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                    <h2 id="lint-index.js">index.js</h2>
+                    <ul>
+                        <li class="lint-entry">L14 - <span class="level-WARNING">WARNING</span> - no-unused-vars - &#x27;Mariana&#x27; is assigned a value but never used. Allowed unused vars must match &#x2f;&#x5e;internals&#x7c;lab&#x24;&#x2f;.</li>
+                        <li class="lint-entry">L16 - <span class="level-WARNING">WARNING</span> - no-unused-vars - &#x27;Waffles&#x27; is assigned a value but never used. Allowed unused vars must match &#x2f;&#x5e;internals&#x7c;lab&#x24;&#x2f;.</li>
+                    </ul>
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                    <h2 id="lint-test/lib/chevrolet.js">test/lib/chevrolet.js</h2>
+                    <ul>
+                        <li class="lint-entry">L10 - <span class="level-WARNING">WARNING</span> - no-unused-vars - &#x27;being&#x27; is assigned a value but never used. Allowed unused vars must match &#x2f;&#x5e;internals&#x7c;lab&#x24;&#x2f;.</li>
+                    </ul>
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>        </div>
     </div>  </body>
 </html>
