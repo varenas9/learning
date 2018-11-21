@@ -49,4 +49,16 @@ describe('Car', () => {
       expect(car.wheels).to.equal(3);
     });
   });
+  describe('car is blue', () => {
+    it('should build a blue car', () => {
+      const car = Car.buildBlue();
+      expect(car.color).to.equal('blue');
+    });
+  });
+  describe('car is Red and White', () => {
+    it('should build a Red and White car with 3 wheels', () => {
+      const car1 = Car.buildRedandWhite();
+      expect(car1.color).to.equal('Red and White');
+    });
+  });
 });
